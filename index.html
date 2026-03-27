@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarah Jenkins | Data Analyst & BI Specialist</title>
+    
+    <!-- Fonts: Inter for clean, data-heavy readability -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i class="fas fa-chart-pie"></i> Sarah Jenkins.
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Case Studies</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger"><i class="fas fa-bars"></i></div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero container" id="about">
+        <div class="hero-content">
+            <span class="section-label">Data Analyst Portfolio</span>
+            <h1>Turning complex data into <span class="highlight">actionable insights.</span></h1>
+            <p>I help businesses make data-driven decisions through advanced SQL querying, Python automation, and interactive Tableau dashboards.</p>
+            
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <h3>5+</h3>
+                    <span>Years Exp.</span>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <span>Projects</span>
+                </div>
+                <div class="stat-item">
+                    <h3>$2M+</h3>
+                    <span>Value Generated</span>
+                </div>
+            </div>
+
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: flex-start;">
+                <a href="#projects" class="btn">View Case Studies</a>
+                <a href="#contact" class="btn btn-outline">Download Resume</a>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <!-- Placeholder for a dashboard screenshot -->
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Data Dashboard">
+            <div class="badge">
+                <i class="fas fa-check-circle"></i>
+                <div>
+                    <p>Certified Analyst</p>
+                    <span>Google Data Analytics</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills-section" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Technical Proficiency</span>
+                <h2 class="section-title">Tools & Technologies</h2>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Category 1 -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-database"></i> Data Manipulation</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-code"></i> SQL (PostgreSQL)</span>
+                        <span class="skill-tag"><i class="fab fa-python"></i> Python (Pandas)</span>
+                        <span class="skill-tag"><i class="fas fa-table"></i> Advanced Excel</span>
+                        <span class="skill-tag"><i class="fab fa-r-project"></i> R</span>
+                    </div>
+                </div>
+
+                <!-- Category 2 -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-bar"></i> Visualization</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fas fa-chart-line"></i> Tableau</span>
+                        <span class="skill-tag"><i class="fas fa-chart-pie"></i> Power BI</span>
+                        <span class="skill-tag"><i class="fab fa-google"></i> Looker Studio</span>
+                        <span class="skill-tag"><i class="fas fa-pen-fancy"></i> D3.js</span>
+                    </div>
+                </div>
+
+                <!-- Category 3 -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Others</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag"><i class="fab fa-aws"></i> AWS Redshift</span>
+                        <span class="skill-tag"><i class="fab fa-google"></i> BigQuery</span>
+                        <span class="skill-tag"><i class="fab fa-git-alt"></i> Git/GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-brain"></i> Statistics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section container" id="projects">
+        <div class="section-header">
+            <span class="section-label">Portfolio</span>
+            <h2 class="section-title">Selected Case Studies</h2>
+        </div>
+
+        <!-- Project 1 -->
+        <article class="project-card">
+            <div class="project-visual" style="background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                <div class="project-overlay">
+                    <a href="#"><i class="fas fa-external-link-alt"></i> View Dashboard</a>
+                </div>
+            </div>
+            <div class="project-details">
+                <div class="project-tools">
+                    <span class="tool-pill">SQL</span>
+                    <span class="tool-pill">Tableau</span>
+                    <span class="tool-pill">Excel</span>
+                </div>
+                <h3>E-Commerce Sales Optimization</h3>
+                <p class="project-desc">Analyzed 2M+ rows of transactional data to identify bottlenecks in the sales funnel. Created an interactive dashboard for the executive team to track regional performance.</p>
+                
+                <div class="project-metrics">
+                    <div class="metric">
+                        <h4>15%</h4>
+                        <p>Revenue Increase</p>
+                    </div>
+                    <div class="metric">
+                        <h4>20 hrs</h4>
+                        <p>Saved/Month (Automation)</p>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="#" class="link-text">View Code <i class="fab fa-github"></i></a>
+                    <a href="#" class="link-text">Read Case Study <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card">
+            <div class="project-visual" style="background-image: url('https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80');">
+                <div class="project-overlay">
+                    <a href="#"><i class="fas fa-external-link-alt"></i> View Dashboard</a>
+                </div>
+            </div>
+            <div class="project-details">
+                <div class="project-tools">
+                    <span class="tool-pill">Python</span>
+                    <span class="tool-pill">Scikit-Learn</span>
+                    <span class="tool-pill">Power BI</span>
+                </div>
+                <h3>Customer Churn Prediction Model</h3>
+                <p class="project-desc">Developed a machine learning model to predict customer churn with 85% accuracy. Visualized risk factors in Power BI to help the retention team target at-risk users.</p>
+                
+                <div class="project-metrics">
+                    <div class="metric">
+                        <h4>85%</h4>
+                        <p>Model Accuracy</p>
+                    </div>
+                    <div class="metric">
+                        <h4>10k</h4>
+                        <p>Customers Analyzed</p>
+                    </div>
+                </div>
+
+                <div class="project-links">
+                    <a href="#" class="link-text">View Code <i class="fab fa-github"></i></a>
+                    <a href="#" class="link-text">Read Case Study <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </article>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+        <div class="container contact-box">
+            <h2>Let's discuss your data</h2>
+            <p>Currently open to full-time opportunities. Whether you have a question about my projects or just want to say hi, I'll try my best to get back to you!</p>
+            <a href="mailto:sarah@example.com" class="btn" style="background: white; color: var(--primary); border-color: white;">Say Hello</a>
+
+            <div class="social-row">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-kaggle"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sarah Jenkins. Built with clean code & coffee.</p>
+        </div>
+    </footer>
+
+    <!-- Link to JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
