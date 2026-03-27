@@ -23,7 +23,78 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Simple Fade In Animation on Scroll
+// --- MODAL LOGIC ---
+
+const modal = document.getElementById('project-modal');
+const closeBtn = document.querySelector('.close-modal');
+const projectCards = document.querySelectorAll('.project-card');
+
+// Elements inside the modal to update
+const modalTitle = document.getElementById('modal-title');
+const modalDesc = document.getElementById('modal-desc');
+const modalMetric1 = document.getElementById('modal-metric1');
+const modalMetric2 = document.getElementById('modal-metric2');
+const modalTools = document.getElementById('modal-tools');
+const modalGithubBtn = document.getElementById('modal-github-btn');
+
+// Add click event to all project cards
+projectCards.forEach(card => {
+    card.addEventListener('click', () => {
+        // Get data from data-attributes
+        const title = card.getAttribute('data-title');
+        const desc = card.getAttribute('data-desc');
+        const m1 = card.getAttribute('data-metric1');
+        const m2 = card.getAttribute('data-metric2');
+        const tools = card.getAttribute('data-tools');
+        const githubLink = card.getAttribute('data-github');
+
+        // Populate Modal
+        modalTitle.textContent = title;
+        modalDesc.textContent = desc;
+        modalMetric1.textContent = m1;
+        modalMetric2.textContent = m2;
+        modalGithubBtn.href = githubLink;
+
+        // Create tool pills dynamically
+        modalTools.innerHTML = '';
+        const toolsArray = tools.split(',');
+        toolsArray.forEach(tool => {
+            const span = document.createElement('span');
+            span.className = 'tool-pill';
+            span.textContent = tool.trim();
+            modalTools.appendChild(span);
+        });
+
+        // Show Modal
+        modal.classList.add('show');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+});
+
+// Close Modal Function
+function closeModal() {
+    modal.classList.remove('show');
+    document.body.style.overflow = 'auto'; // Restore scrolling
+}
+
+// Close when clicking X
+closeBtn.addEventListener('click', closeModal);
+
+// Close when clicking outside the modal content
+window.addEventListener('click', (e) => {
+    if (e.target == modal) {
+        closeModal();
+    }
+});
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('show')) {
+        closeModal();
+    }
+});
+
+// Fade In Animation on Scroll
 const observerOptions = { threshold: 0.1 };
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
